@@ -1,0 +1,300 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #f9faff;
+  --color-text-primary: #828282;
+  --color-text-secondary: #333333;
+  --color-primary: #928DF1;
+  --color-secondary: #FDC435;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-text-secondary);
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.heading {
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-bottom: 58px;
+  text-align: center;
+}
+
+.heading:after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100px;
+  border: 2px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  transform: translateX(-50%);
+}
+
+/*
+ Header and Navigation 
+*/
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   /*since top and bottom are both 20px
+    and left and right padding are 70px
+    we can use this shortcut*/
+  padding: 20px 70px;
+  background-color: var(--color-primary);
+}
+.header-logo {
+  max-width: 40px;
+}
+
+.header-links {
+  display: flex;
+  margin: 0;
+}
+
+.header-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-content {
+    padding: 20px;
+  }
+  
+  .header-links {
+    display: none;
+  }
+}
+
+/*
+ Layout/ page style
+*/
+
+.wrapper {
+  padding-top: 80px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.about-img {
+  max-width: 420px;
+  max-height: 420px;
+  /*this makes the circle effect */
+  border-radius: 50%;
+  /* With the hidden value, the overflow is clipped, and the rest of the content is hidden */
+  overflow: hidden;
+  border: 5px solid var(--color-primary);
+  /*since we have specified a width on the object, now by applying margin: 0 auto,
+  the object will sit centrally within it's parent container*/
+  margin: 0 auto;
+}
+
+
+.intro {
+  align-items: center;
+}
+
+.intro .button-primary {
+  margin-right: 10px;
+}
+
+.intro p {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.intro span {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-text,
+  .intro-img {
+    margin-top: 40px;
+  }
+}
+
+section {
+  margin-bottom: 200px;
+}
+
+/*
+ Card component
+*/
+.project-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 24px;
+  background-color: white;
+  /*rgba stands for red, green, blue and alpha*/
+  box-shadow: 0 6px 64px rgba(112, 144, 176, 0.1);
+}
+
+.project-card-title {
+  margin-bottom: 24px;
+}
+
+.project-card-content {
+  /*top right bottom left*/
+  padding: 30px 20px 40px 20px;
+}
+
+.project-card-text {
+  font-size: 16px;
+  margin-bottom: 40px;
+  /* the properties bellow are needed to limit the amount of text inside the card component */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.project-card-image {
+  display: flex;
+  height: 180px;
+  width: 100%;
+  border-bottom: 4px solid var(--color-secondary);
+}
+
+.project-card-image img {
+  /*object fit cover prevents image from strecthing */
+  object-fit: cover;
+  /* border radius on image makes a round effect like the card
+  border top left radius and border top right radius need to be 24px then */
+  border-radius: 24px 24px 0 0;
+}
+
+/*
+ Buttons
+*/
+.button {
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 7px 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  /*transition allows you to change property values smoothly
+  this will be used for the hover effect so it wont be so abrupt*/
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button-primary {
+  color: var(--color-text-secondary) !important;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  border-radius: 8px;
+}
+
+.button-primary:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+
+.button-secondary {
+  color: var(--color-primary) !important;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+}
+
+.button-secondary:hover {
+  color: white !important;
+  background-color: var(--color-primary);
+}
+
+.button-secondary-rounded {
+  color: var(--color-primary) !important;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 24px;
+}
+
+.button-secondary-rounded:hover {
+  color: white !important;
+  background-color: var(--color-primary);
+}
+
+
+/* Social */
+.social {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 15px;
+  transition: 0.3s ease 0s;
+}
+
+.social:hover {
+  box-shadow: 0px 11px 3px cornsilk;
+  /* transform property applies a 2D or 3D transformation to an element*/
+  transform: translateY(-7px);
+}
+
+.instagram {
+  background-image: url(https://cdn.glitch.com/af18722b-fa2c-456f-837b-98ed87df14d9%2Finstagram-icon.png?v=1622026823992);
+}
+
+.github {
+  background-image: url(https://cdn.glitch.com/af18722b-fa2c-456f-837b-98ed87df14d9%2Fgithub-icon.png?v=1622026826207);
+}
+
+/* Footer */
+.footer {
+  background-image: url("https://cdn.glitch.com/af18722b-fa2c-456f-837b-98ed87df14d9%2Ffooter.png?v=1622156914890");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 350px;
+  margin: 0 !important;
+}

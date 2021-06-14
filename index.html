@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+
+    <title>My Cool Portfolio</title>
+
+    <!-- meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://portfolio-atomic.glitch.me/" />
+    <meta name="description" content="My Cool Portfolio" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="AtomicFox Portfolio" />
+    <meta property="og:type" content="article" />
+    <!-- <meta property="og:url" content="your url here" /> -->
+    <meta property="og:description" content="My Cool Portfolio" />
+
+    <!-- import bootstrap library-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- import font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header-content">
+      <div class="header-logo">
+        <img src="assets/logo.png" alt="Logo Image" />
+      </div>
+      <nav class="header-navigation">
+        <ul class="header-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- the wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+      <div class="container" role="main">
+        <!-- this is the start of content for our page -->
+        <section class="row intro">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <h1 class="title">Hello, my name is Maria Albertina</h1>
+            <p>
+              I'm a
+              <span> Web developer </span>
+              focused on crafting great web experiences by keeping present UX/UI
+              best practices
+            </p>
+            <a href="" class="button button-primary"> Github </a>
+            <a href="" class="button button-secondary"> LinkedIn </a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <img
+              src="assets/dev.png"
+              alt="Draw of a woman sitting at a computer, problably a developer"
+              class="intro-img"
+            />
+          </div>
+        </section>
+        <!-- About -->
+        <section class="row about" id="about">
+          <div class="col-12">
+            <h2 class="heading">About me</h2>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="about-img">
+              <img src="assets/mariaalbertina-webdeveloper.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 d-flex align-items-center">
+            <p class="about-text">
+              Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis
+              tortor neque auctor dis ipsum. Pretium cras amet odio amet
+              eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet
+              sit.
+            </p>
+          </div>
+        </section>
+        <!-- Projects -->
+        <section class="projects" id="projects">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="heading">Projects</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="assets/projects/project1.png" />
+                </div>
+                <div class="project-card-content">
+                  <h3 class="project-card-title">Project Name</h3>
+                  <p class="project-card-text">
+                    Tincidunt amet, tempor duis tortor neque auctor dis ipsum.
+                    Pretium cras amet odio amet eleifend id sed cras sed.
+                    Aliquet risus posuere aliquet imperdiet sit.
+                  </p>
+                  <a class="button button-secondary-rounded"> View Project </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="assets/projects/project2.png" />
+                </div>
+                <div class="project-card-content">
+                  <h3 class="project-card-title">Project Name</h3>
+                  <p class="project-card-text">
+                    Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis
+                    tortor neque auctor dis ipsum. Pretium cras amet odio amet
+                    eleifend id sed cras sed. Aliquet risus posuere aliquet
+                    imperdiet sit.
+                  </p>
+                  <a class="button button-secondary-rounded"> View Project </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+              <div class="project-card">
+                <div class="project-card-image">
+                  <img src="assets/projects/project3.png" />
+                </div>
+                <div class="project-card-content">
+                  <h3 class="project-card-title">Project Name</h3>
+                  <p class="project-card-text">
+                    Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis
+                    tortor neque auctor dis ipsum. Pretium cras amet odio amet
+                    eleifend id sed cras sed.
+                  </p>
+                  <a class="button button-secondary-rounded"> View Project </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="heading">Contacts</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-8 offset-md-2">
+              <!-- <p>
+                💌 Feel free to get in touch with me by
+                <a href="mailto:vossoemailaqui">Email</a> 💌
+              </p> -->
+              <form action="mailto:vossoemailaqui" method="post">
+                <div class="form-group">
+                  <label for="inputName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Enter your name"
+                    name="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Enter email"
+                    name="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    name="text"
+                  ></textarea>
+                </div>
+                <div class="text-right">
+                  <button type="submit" class="button button-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="text-center">
+        <a href="" class="social github"></a>
+        <a href="" class="social instagram"></a>
+      </div>
+    </footer>
+  </body>
+</html>
