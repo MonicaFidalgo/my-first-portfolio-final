@@ -53,6 +53,7 @@ h2 {
 
 .heading:after {
   content: " ";
+  /* absolute to its parent heading */
   position: absolute;
   top: 100%;
   left: 50%;
