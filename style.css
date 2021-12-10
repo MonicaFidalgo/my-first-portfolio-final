@@ -3,8 +3,8 @@
   --color-bg: #f9faff;
   --color-text-primary: #828282;
   --color-text-secondary: #333333;
-  --color-primary: #928DF1;
-  --color-secondary: #FDC435;
+  --color-primary: #928df1;
+  --color-secondary: #fdc435;
 }
 
 /* Basic page style resets */
@@ -70,7 +70,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-   /*since top and bottom are both 20px
+  /*since top and bottom are both 20px
     and left and right padding are 70px
     we can use this shortcut*/
   padding: 20px 70px;
@@ -95,7 +95,7 @@ h2 {
   .header-content {
     padding: 20px;
   }
-  
+
   .header-links {
     display: none;
   }
@@ -126,7 +126,6 @@ img {
   the object will sit centrally within it's parent container*/
   margin: 0 auto;
 }
-
 
 .intro {
   align-items: center;
@@ -263,7 +262,6 @@ section {
   background-color: var(--color-primary);
 }
 
-
 /* Social */
 .social {
   display: inline-block;
@@ -282,16 +280,16 @@ section {
 }
 
 .instagram {
-  background-image: url(https://cdn.glitch.com/af18722b-fa2c-456f-837b-98ed87df14d9%2Finstagram-icon.png?v=1622026823992);
+  background-image: url("./assets/social/instagram.png");
 }
 
 .github {
-  background-image: url(https://cdn.glitch.com/af18722b-fa2c-456f-837b-98ed87df14d9%2Fgithub-icon.png?v=1622026826207);
+  background-image: url("./assets/social/github.png");
 }
 
 /* Footer */
 .footer {
-  background-image: url("https://cdn.glitch.com/af18722b-fa2c-456f-837b-98ed87df14d9%2Ffooter.png?v=1622156914890");
+  background-image: url("./assets/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
