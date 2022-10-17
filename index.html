@@ -45,13 +45,18 @@
       <div class="header-logo">
         <img src="assets/logo.png" alt="Logo Image" />
       </div>
-      <nav class="header-navigation">
-        <ul class="header-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
+      <div class="d-flex align-items-center">
+        <nav class="header-navigation">
+          <ul class="header-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="button button-secondary-rounded" id="change-theme">
+          Change theme
+        </button>
+      </div>
     </div>
     <!-- the wrapper and content divs set margins and positioning -->
     <div class="wrapper">
@@ -87,13 +92,18 @@
               <img src="assets/mariaalbertina-webdeveloper.png" alt="" />
             </div>
           </div>
-          <div class="col-sm-12 col-lg-6 d-flex align-items-center">
+          <div class="col-sm-12 col-lg-6 d-flex align-items-center flex-column">
             <p class="about-text">
               Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis
               tortor neque auctor dis ipsum. Pretium cras amet odio amet
               eleifend id sed cras sed. Aliquet risus posuere aliquet imperdiet
               sit.
             </p>
+            <div class="text-center" id="motivato"></div>
+            <br />
+            <button class="button button-secondary" onclick="motivateMe()">
+              Next quote
+            </button>
           </div>
         </section>
         <!-- Projects -->

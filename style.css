@@ -1,6 +1,7 @@
 /* Our default values set as CSS variables */
 :root {
   --color-bg: #f9faff;
+  --color-bg-dark: #000000;
   --color-text-primary: #828282;
   --color-text-secondary: #333333;
   --color-primary: #928df1;
@@ -21,7 +22,7 @@ ul {
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   color: var(--color-text-primary);
   background-color: var(--color-bg);
   margin: 0;
@@ -40,6 +41,20 @@ h1 {
 
 h2 {
   font-size: 48px;
+}
+
+.dark-theme {
+  background-color: var(--color-bg-dark);
+  --color-text-primary: #f9faff;
+  --color-text-secondary: #f9faff;
+}
+
+.dark-theme .project-card {
+  background-color: var(--color-bg-dark);
+}
+
+.dark-theme .social:hover {
+  box-shadow: none;
 }
 
 .heading {
@@ -227,6 +242,13 @@ section {
   cursor: pointer;
 }
 
+.button:hover {
+  text-decoration: none;
+}
+.button:focus {
+  outline: none;
+}
+
 .button-primary {
   color: var(--color-text-secondary) !important;
   background-color: var(--color-secondary);
@@ -241,7 +263,7 @@ section {
 
 .button-secondary {
   color: var(--color-primary) !important;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid var(--color-primary);
   border-radius: 8px;
 }
@@ -249,11 +271,12 @@ section {
 .button-secondary:hover {
   color: white !important;
   background-color: var(--color-primary);
+  border: 1px solid white;
 }
 
 .button-secondary-rounded {
   color: var(--color-primary) !important;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid var(--color-primary);
   border-radius: 24px;
 }
@@ -261,6 +284,7 @@ section {
 .button-secondary-rounded:hover {
   color: white !important;
   background-color: var(--color-primary);
+  border: 1px solid white;
 }
 
 /* Social */
