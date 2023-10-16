@@ -174,7 +174,9 @@ img {
   }
 }
 
-section {
+.intro,
+.about,
+.projects {
   margin-bottom: 200px;
 }
 
